@@ -313,4 +313,52 @@ section {
     padding: 0 10px;
   }
 }
-@media;
+/* Portfolio */
+
+.portfolio {
+  background-color: black;
+}
+
+.portfolio h1 {
+  font-size: 28px;
+  font-family: "Saira Condensed", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.portfolio .web img {
+  width: 100%;
+}
+
+.portfolio .about {
+  color: white;
+  font-family: "Saira", sans-serif;
+  font-weight: normal;
+  padding: 10px 20px 20px 0px;
+  text-align: left;
+}
+
+.portfolio .about h2 {
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+}
+.portfolio .about p {
+  font-size: 12px;
+}
+
+.portfolio .project {
+  margin-bottom: 20px;
+}
+
+.portfolio .project:nth-of-type(odd) {
+  background-color: orange;
+}
+
+.portfolio .project:nth-of-type(even) {
+  background-color: deepskyblue;
+}

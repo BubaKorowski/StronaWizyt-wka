@@ -50,7 +50,6 @@ header h1 {
 }
 header h2 {
   font-size: 20px;
-  font-weight: 20px;
   font-weight: normal;
 }
 
@@ -102,6 +101,21 @@ header button {
     right: -20%;
   }
 }
+@media (orientation: landscape) {
+  header img {
+    height: 80%;
+    bottom: 0;
+    right: -5%;
+  }
+  header div.welcome {
+    top: 15%;
+    left: 7%;
+    right: 48%;
+  }
+  header button {
+    margin-top: 40px;
+  }
+}
 
 @media (orientation: landscape) and (min-width: 640px) {
   header h1 {
@@ -113,23 +127,6 @@ header button {
   header button {
     font-size: 16px;
     line-height: 40px;
-  }
-}
-
-@media (orientation: landscape) and (min-width: 533px) {
-  header h1 {
-    font-size: 24px;
-  }
-  header h2 {
-    font-size: 20px;
-  }
-  header button {
-    font-size: 14px;
-    line-height: 40px;
-  }
-
-  header img {
-    height: 80%;
   }
 }
 
@@ -171,14 +168,13 @@ header button {
     font-size: 100px;
   }
   header h1 {
-    margin-top: 60px;
-    font-size: 34px;
+    margin-top: 40px;
+    font-size: 50px;
   }
   header h2 {
-    font-size: 34px;
+    font-size: 50px;
   }
   header button {
-    border: 2px solid white;
     margin-top: 80px;
     font-size: 24px;
     line-height: 70px;
@@ -187,11 +183,33 @@ header button {
 
   header img {
     height: 95%;
-    /* bottom: 0; */
     right: -10%;
   }
 }
 
+@media (orientation: landscape) and (min-width: 1600px) {
+  header div.welcome {
+    left: 8%;
+  }
+  header p {
+    font-size: 120px;
+  }
+  header h1 {
+    margin-top: 40px;
+    font-size: 60px;
+  }
+  header h2 {
+    font-size: 60px;
+  }
+  header button {
+    line-height: 90px;
+  }
+
+  header img {
+    right: -8%;
+    height: 90%;
+  }
+}
 @media (min-width: 1024px) {
   header button {
     cursor: pointer;
@@ -203,19 +221,7 @@ header button {
   }
 }
 
-@media (orientation: landscape) {
-  /* header img {
-        position: absolute;
-        height: 80%;
-        bottom: 0;
-        right: -5%; 
-    } */
-  header div.welcome {
-    left: 7%;
-    right: 50%;
-  }
-}
-section {
+footer {
   min-height: 30vh;
 }
 
@@ -279,20 +285,26 @@ section {
 }
 
 @media (min-width: 1024px) {
+  .features {
+    margin-top: 50px;
+    padding: 5% 2%;
+    text-align: center;
+  }
   .feature {
     float: left;
     width: 33%;
     padding: 20px;
   }
   .features h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
   .features h2 {
     font-size: 22px;
   }
   .features p {
     font-size: 15px;
-    line-height: 140%;
+    line-height: 120%;
+    padding: 0 10px;
   }
 }
 
@@ -370,7 +382,7 @@ section {
     font-size: 40px;
   }
   .portfolio .about h2 {
-    font-size: 18px;
+    font-size: 28px;
     text-indent: 40px;
   }
   .portfolio .about p {
@@ -394,9 +406,15 @@ section {
   .portfolio .project:nth-of-type(even) .web {
     float: right;
   }
-  .portfolio :nth-last-of-type(odd) .about {
-    padding: 10px 0px 20px 20px;
-    /* Sam to zrobiłem ;) */
+  .portfolio .project:nth-of-type(even) .about {
+    padding: 0;
+  }
+  .portfolio .project:nth-of-type(even) .about h2 {
+    text-indent: 0;
+    margin-left: 40px;
+  }
+  .portfolio .project:nth-of-type(even) .about p {
+    padding-right: 20px;
   }
 }
 
@@ -421,3 +439,89 @@ section {
   }
 }
 /* ponieważ landscape pasuje również do max-width 768px and portrait */
+
+/* section slogan */
+
+.slogan {
+  text-align: center;
+  background-image: url(../images/motto.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-attachment: fixed;
+}
+
+.slogan h1 {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.slogan p {
+  font-family: "Saira", sans-serif;
+  font-size: 18px;
+}
+
+.slogan p.author {
+  font-size: 11px;
+  margin-top: 20px;
+}
+.slogan .bg {
+  background-color: rgba(0, 63, 114, 0.5);
+  /* opacity: 0.5; */
+  padding: 30px 10px;
+}
+
+@media (orientation: landscape) {
+  .slogan p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan .bg {
+    background-color: rgba(0, 63, 114, 0.5);
+    padding: 50px 10px;
+  }
+
+  .slogan h1 {
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 48px;
+    margin-bottom: 35px;
+  }
+  .slogan p {
+    font-family: "Saira", sans-serif;
+    font-size: 28px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .slogan p.author {
+    font-size: 11px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .slogan .bg {
+    padding: 80px 10px;
+  }
+
+  .slogan h1 {
+    font-size: 60px;
+    margin-bottom: 55px;
+  }
+  .slogan p {
+    font-size: 40px;
+    width: 70%;
+  }
+
+  .slogan p.author {
+    font-size: 26px;
+    margin-top: 40px;
+  }
+}

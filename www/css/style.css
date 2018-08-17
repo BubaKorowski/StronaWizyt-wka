@@ -1,10 +1,12 @@
 /*  font-family: 'Saira Condensed', sans-serif;
     font-family: 'Saira', sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .clearfix::after {
   content: "";
   display: block;
@@ -19,9 +21,11 @@ header {
   max-width: 1920px;
   margin: 0 auto;
 }
-header > * {
+
+header>* {
   position: absolute;
 }
+
 header img {
   position: absolute;
   height: 50%;
@@ -48,6 +52,7 @@ header h1 {
   font-size: 20px;
   margin-top: 20px;
 }
+
 header h2 {
   font-size: 20px;
   font-weight: normal;
@@ -72,7 +77,6 @@ header button {
   header h2 {
     font-size: 24px;
   }
-
   header button {
     margin-top: 24px;
     line-height: 40px;
@@ -84,14 +88,12 @@ header button {
   header p {
     font-size: 80px;
   }
-
   header h1 {
     font-size: 33px;
   }
   header h2 {
     font-size: 28px;
   }
-
   header button {
     margin-top: 40px;
     line-height: 50px;
@@ -101,6 +103,7 @@ header button {
     right: -20%;
   }
 }
+
 @media (orientation: landscape) {
   header img {
     height: 80%;
@@ -150,7 +153,6 @@ header button {
     line-height: 70px;
     padding: 0 50px;
   }
-
   header img {
     height: 95%;
     bottom: 0;
@@ -163,7 +165,6 @@ header button {
     text-align: left;
     left: 6%;
   }
-
   header p {
     font-size: 100px;
   }
@@ -180,7 +181,6 @@ header button {
     line-height: 70px;
     padding: 0 50px;
   }
-
   header img {
     height: 95%;
     right: -10%;
@@ -204,12 +204,12 @@ header button {
   header button {
     line-height: 90px;
   }
-
   header img {
     right: -8%;
     height: 90%;
   }
 }
+
 @media (min-width: 1024px) {
   header button {
     cursor: pointer;
@@ -324,6 +324,7 @@ footer {
     padding: 0 10px;
   }
 }
+
 /* Portfolio */
 
 .portfolio {
@@ -360,6 +361,7 @@ footer {
   padding-bottom: 6px;
   text-indent: 20px;
 }
+
 .portfolio .about p {
   font-size: 12px;
   padding-left: 20px;
@@ -377,6 +379,7 @@ footer {
 .portfolio .project:nth-of-type(even) {
   background-color: #29a6dc;
 }
+
 @media (min-width: 768px) {
   .portfolio h1 {
     font-size: 40px;
@@ -393,13 +396,13 @@ footer {
     margin-bottom: 40px;
   }
 }
+
 @media (orientation: landscape) {
   .web,
   .about {
     width: 50%;
     float: left;
   }
-
   .web img {
     display: block;
   }
@@ -438,6 +441,7 @@ footer {
     margin-bottom: 40px;
   }
 }
+
 /* ponieważ landscape pasuje również do max-width 768px and portrait */
 
 /* section slogan */
@@ -468,6 +472,7 @@ footer {
   font-size: 11px;
   margin-top: 20px;
 }
+
 .slogan .bg {
   background-color: rgba(0, 63, 114, 0.5);
   /* opacity: 0.5; */
@@ -487,7 +492,6 @@ footer {
     background-color: rgba(0, 63, 114, 0.5);
     padding: 50px 10px;
   }
-
   .slogan h1 {
     font-family: "Saira Condensed", sans-serif;
     font-size: 48px;
@@ -500,17 +504,16 @@ footer {
     margin-right: auto;
     margin-left: auto;
   }
-
   .slogan p.author {
     font-size: 11px;
     margin-top: 40px;
   }
 }
+
 @media (min-width: 1024px) {
   .slogan .bg {
     padding: 80px 10px;
   }
-
   .slogan h1 {
     font-size: 60px;
     margin-bottom: 55px;
@@ -519,7 +522,6 @@ footer {
     font-size: 40px;
     width: 70%;
   }
-
   .slogan p.author {
     font-size: 26px;
     margin-top: 40px;
@@ -533,6 +535,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
 .hobby .item {
   height: 20vh;
   background-position: center;
@@ -588,7 +591,6 @@ footer {
     margin-bottom: 35px;
     margin-top: 40px;
   }
-
   .hobby .item p {
     font-size: 30px;
     padding: 15px 0;
@@ -607,7 +609,6 @@ footer {
     line-height: 40vh;
     opacity: 1;
   }
-
   .hobby .item {
     background-size: 100%;
     transition: 0.8s;
@@ -623,7 +624,6 @@ footer {
     margin-bottom: 45px;
     font-size: 60px;
   }
-
   .hobby .item p {
     font-size: 40px;
   }
@@ -675,15 +675,15 @@ footer {
   border: 2px solid white;
 }
 
-.contact  .socials {
+.contact .socials {
   padding-top: 20px;
   font-size: 0;
 }
 
-.contact  .social {
+.contact .social {
   padding: 10px 0;
   color: white;
-  font-family: 'saira condensed',sans-serif;
+  font-family: 'saira condensed', sans-serif;
 }
 
 .contact .socials img {
@@ -705,14 +705,15 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .contact form, .contact .socials {
+  .contact form,
+  .contact .socials {
     float: left;
     width: 50%;
+    padding: 0 20px;
   }
-}
-
-.contact .social {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
+  .contact .social {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
 }

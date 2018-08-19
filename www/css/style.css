@@ -645,6 +645,12 @@ header button {
   padding-top: 20px;
 }
 
+.contact input::placeholder,
+.contact textarea::placeholder {
+  text-transform: uppercase;
+  background-color: rgba(255, 228, 226, 0.781);
+}
+
 .contact input,
 .contact button,
 .contact textarea {
@@ -657,6 +663,11 @@ header button {
 
 .contact input {
   height: 36px;
+}
+
+.contact input:focus {
+  height: 36px;
+  background-color: rgba(243, 214, 214, 0.514);
 }
 
 .contact textarea {
